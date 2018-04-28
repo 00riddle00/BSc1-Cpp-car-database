@@ -1,0 +1,307 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASCENDING	sorting.h	/^    enum Types { ASCENDING = 1, DESCENDING };$/;"	e	enum:SortingConstants::Types
+CC	Makefile	/^CC=g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -Wextra -g -lm -std=c++11 -DNDEBUG$/;"	m
+CONTAINS	filter.h	/^	enum Types { EQUAL = 1, CONTAINS, NOT_EQUAL, DOES_NOT_CONTAIN };$/;"	e	enum:FilterConstants::Types
+Car	car.cpp	/^Car::Car($/;"	f	class:Car
+Car	car.cpp	/^Car::Car() {$/;"	f	class:Car
+Car	car.h	/^class Car {$/;"	c
+Connection	connection.cpp	/^Connection::Connection(const string& filename) {$/;"	f	class:Connection
+Connection	connection.h	/^class Connection {$/;"	c
+DESCENDING	sorting.h	/^    enum Types { ASCENDING = 1, DESCENDING };$/;"	e	enum:SortingConstants::Types
+DOES_NOT_CONTAIN	filter.h	/^	enum Types { EQUAL = 1, CONTAINS, NOT_EQUAL, DOES_NOT_CONTAIN };$/;"	e	enum:FilterConstants::Types
+EARLIEST_YEAR	car.h	/^const int EARLIEST_YEAR = 1920;$/;"	v
+EQUAL	filter.h	/^	enum Types { EQUAL = 1, CONTAINS, NOT_EQUAL, DOES_NOT_CONTAIN };$/;"	e	enum:FilterConstants::Types
+Fields	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	g	namespace:FilterConstants
+Fields	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	g	namespace:SortingConstants
+Filter	filter.cpp	/^Filter::Filter() {$/;"	f	class:Filter
+Filter	filter.cpp	/^Filter::Filter(int field, int type, const string& value) {$/;"	f	class:Filter
+Filter	filter.h	/^class Filter {$/;"	c
+FilterConstants	filter.h	/^namespace FilterConstants {$/;"	n
+Helpers	Helpers.h	/^namespace Helpers {$/;"	n
+ID	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+Input	input.cpp	/^Input::Input() {$/;"	f	class:Input
+Input	input.h	/^class Input {$/;"	c
+LATEST_YEAR	car.h	/^const int LATEST_YEAR = 2018;$/;"	v
+LOGFILE	program.cpp	62;"	d	file:
+LoadFromBinaryFile	load_from_binary_file.cpp	/^LoadFromBinaryFile::LoadFromBinaryFile(const string& filename) {$/;"	f	class:LoadFromBinaryFile
+LoadFromBinaryFile	load_from_binary_file.h	/^class LoadFromBinaryFile {$/;"	c
+MAKE	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	e	enum:FilterConstants::Fields
+MAKE	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+MAXSPEED	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	e	enum:FilterConstants::Fields
+MAXSPEED	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+MAX_ENTRY_SIZE	car.h	/^const int MAX_ENTRY_SIZE = 30;$/;"	v
+MAX_HEIGHT_FROM_GROUND	car.h	/^const float MAX_HEIGHT_FROM_GROUND = 150.0;$/;"	v
+MAX_MAX_SPEED	car.h	/^const int MAX_MAX_SPEED = 420;$/;"	v
+MAX_NOT_TO_SIXTY	car.h	/^const float MAX_NOT_TO_SIXTY = 100.0;$/;"	v
+MAX_PARAMS	input.h	/^const int MAX_PARAMS = 2;$/;"	v
+MAX_PRICE	car.h	/^const int MAX_PRICE = 1e9;$/;"	v
+MAX_PROTECTOR_DEPTH	car.h	/^const float MAX_PROTECTOR_DEPTH = 100.0;$/;"	v
+MAX_SIXTY_TO_MAX_SPEED	car.h	/^const float MAX_SIXTY_TO_MAX_SPEED = 1000.0;$/;"	v
+MAX_TIRE_SIZE	car.h	/^const int MAX_TIRE_SIZE = 30;$/;"	v
+MODEL	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	e	enum:FilterConstants::Fields
+MODEL	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+NOT_EQUAL	filter.h	/^	enum Types { EQUAL = 1, CONTAINS, NOT_EQUAL, DOES_NOT_CONTAIN };$/;"	e	enum:FilterConstants::Types
+PRICE	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	e	enum:FilterConstants::Fields
+PRICE	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+RACETIME	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+RACE_H	race.h	2;"	d
+Race	race.cpp	/^Race::Race() {$/;"	f	class:Race
+Race	race.h	/^class Race {$/;"	c
+RaceCar	car.cpp	/^RaceCar::RaceCar($/;"	f	class:RaceCar
+RaceCar	car.cpp	/^RaceCar::RaceCar() $/;"	f	class:RaceCar
+RaceCar	car.h	/^class RaceCar : public Car {$/;"	c
+SUVCar	car.cpp	/^SUVCar::SUVCar($/;"	f	class:SUVCar
+SUVCar	car.cpp	/^SUVCar::SUVCar() $/;"	f	class:SUVCar
+SUVCar	car.h	/^class SUVCar : public Car {$/;"	c
+Sorting	sorting.cpp	/^Sorting::Sorting() {$/;"	f	class:Sorting
+Sorting	sorting.cpp	/^Sorting::Sorting(int field, int type) {$/;"	f	class:Sorting
+Sorting	sorting.h	/^class Sorting {$/;"	c
+SortingConstants	sorting.h	/^namespace SortingConstants {$/;"	n
+StockCar	car.cpp	/^StockCar::StockCar($/;"	f	class:StockCar
+StockCar	car.cpp	/^StockCar::StockCar() $/;"	f	class:StockCar
+StockCar	car.h	/^class StockCar : public Car {$/;"	c
+Table	table.cpp	/^Table::Table(vector<string> params, vector<size_t> column_widths) {$/;"	f	class:Table
+Table	table.h	/^class Table {$/;"	c
+Types	filter.h	/^	enum Types { EQUAL = 1, CONTAINS, NOT_EQUAL, DOES_NOT_CONTAIN };$/;"	g	namespace:FilterConstants
+Types	sorting.h	/^    enum Types { ASCENDING = 1, DESCENDING };$/;"	g	namespace:SortingConstants
+Wheels	car.cpp	/^Wheels::Wheels() {$/;"	f	class:Wheels
+Wheels	car.cpp	/^Wheels::Wheels(int tireSize, const string& tireType, float protectorDepth) {$/;"	f	class:Wheels
+Wheels	car.h	/^class Wheels {$/;"	c
+Wheels	wheels.cpp	/^Wheels::Wheels() {$/;"	f	class:Wheels
+Wheels	wheels.cpp	/^Wheels::Wheels(int tireSize, const string& tireType, float protectorDepth) {$/;"	f	class:Wheels
+WriteToBinaryFile	write_to_binary_file.cpp	/^WriteToBinaryFile::WriteToBinaryFile(const string& filename) {$/;"	f	class:WriteToBinaryFile
+WriteToBinaryFile	write_to_binary_file.h	/^class WriteToBinaryFile {$/;"	c
+YEAR	filter.h	/^	enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED };$/;"	e	enum:FilterConstants::Fields
+YEAR	sorting.h	/^    enum Fields { MAKE = 1, MODEL, YEAR, PRICE, MAXSPEED, RACETIME, ID };$/;"	e	enum:SortingConstants::Fields
+_USE_MATH_DEFINES	car.cpp	1;"	d	file:
+__CAR_H_	car.h	2;"	d
+__CONNECTION_H_	connection.h	2;"	d
+__FILTER_H_	filter.h	2;"	d
+__INPUT_H_	input.h	2;"	d
+__LOAD_FROM_BINARY_FILE_H_	load_from_binary_file.h	2;"	d
+__SORTING_H_	sorting.h	2;"	d
+__TABLE_H_	table.h	2;"	d
+__WRITE_TO_BINARY_FILE_H_	write_to_binary_file.h	2;"	d
+add	input.cpp	/^void Input::add(const string& param) {$/;"	f	class:Input
+aerodynamicsCoefficient	car.h	/^    float aerodynamicsCoefficient;$/;"	m	class:RaceCar
+car_make	car.h	/^    std::string car_make;$/;"	m	class:Car
+car_model	car.h	/^    std::string car_model;$/;"	m	class:Car
+car_price	car.h	/^    int car_price;$/;"	m	class:Car
+car_year	car.h	/^    int car_year;$/;"	m	class:Car
+choice	Helpers.cpp	/^int Helpers::choice(const string& message) {$/;"	f	class:Helpers
+clear_input	input.cpp	/^void Input::clear_input() {$/;"	f	class:Input
+clocks	program.cpp	/^double clocks;$/;"	v
+close	load_from_binary_file.cpp	/^void LoadFromBinaryFile::close() {$/;"	f	class:LoadFromBinaryFile
+close	write_to_binary_file.cpp	/^void WriteToBinaryFile::close() {$/;"	f	class:WriteToBinaryFile
+cmd	input.h	/^    bool cmd;$/;"	m	class:Input
+column_widths	table.h	/^    std::vector<size_t> column_widths;$/;"	m	class:Table
+constant1	car.h	/^    float constant1;$/;"	m	class:Car
+constant1	race.cpp	/^float Race::constant1 = 0;$/;"	m	class:Race	file:
+constant1	race.h	/^    static float constant1;$/;"	m	class:Race
+constant2	car.h	/^    float constant2;$/;"	m	class:Car
+constant2	race.cpp	/^float Race::constant2 = 0;$/;"	m	class:Race	file:
+constant2	race.h	/^    static float constant2;$/;"	m	class:Race
+count	input.h	/^    int count;$/;"	m	class:Input
+distance	race.cpp	/^double Race::distance = 0;$/;"	m	class:Race	file:
+distance	race.h	/^    static double distance;$/;"	m	class:Race
+exiting	program.cpp	/^void exiting() {$/;"	f
+f1	race.cpp	/^double Race::f1(double x) {$/;"	f	class:Race
+f2	race.cpp	/^double Race::f2(double x) {$/;"	f	class:Race
+f3	race.cpp	/^double Race::f3(double x) {$/;"	f	class:Race
+field	filter.h	/^    FilterConstants::Fields field;$/;"	m	class:Filter
+field	sorting.h	/^    SortingConstants::Fields field;$/;"	m	class:Sorting
+filename	connection.h	/^    std::string filename;$/;"	m	class:Connection
+filename	load_from_binary_file.h	/^    std::string filename;$/;"	m	class:LoadFromBinaryFile
+filename	write_to_binary_file.h	/^    std::string filename;$/;"	m	class:WriteToBinaryFile
+filter	car.h	/^    bool filter;$/;"	m	class:Car
+filter	filter.cpp	/^void Filter::filter(vector<Car*> &cars) {$/;"	f	class:Filter
+filter_by_make	filter.cpp	/^void Filter::filter_by_make(vector<Car*> &cars) {$/;"	f	class:Filter
+filter_by_max_speed	filter.cpp	/^void Filter::filter_by_max_speed(vector<Car*> &cars) {$/;"	f	class:Filter
+filter_by_model	filter.cpp	/^void Filter::filter_by_model(vector<Car*> &cars) {$/;"	f	class:Filter
+filter_by_price	filter.cpp	/^void Filter::filter_by_price(vector<Car*> &cars) {$/;"	f	class:Filter
+filter_by_year	filter.cpp	/^void Filter::filter_by_year(vector<Car*> &cars) {$/;"	f	class:Filter
+finish	program.cpp	/^clock_t finish;$/;"	v
+first	sorting.h	/^    int first;$/;"	m	class:Sorting
+getAction	input.cpp	/^char Input::getAction() {$/;"	f	class:Input
+getAerodynamicsCoefficient	car.cpp	/^float RaceCar::getAerodynamicsCoefficient() {$/;"	f	class:RaceCar
+getCar	car.cpp	/^void Car::getCar(int id) {$/;"	f	class:Car
+getCar	car.cpp	/^void RaceCar::getCar(int id) {$/;"	f	class:RaceCar
+getCar	car.cpp	/^void SUVCar::getCar(int id) {$/;"	f	class:SUVCar
+getCar	car.cpp	/^void StockCar::getCar(int id) {$/;"	f	class:StockCar
+getCarMake	car.cpp	/^const string& Car::getCarMake() {$/;"	f	class:Car
+getCarModel	car.cpp	/^const string& Car::getCarModel() {$/;"	f	class:Car
+getCarPrice	car.cpp	/^int Car::getCarPrice() {$/;"	f	class:Car
+getCarYear	car.cpp	/^int Car::getCarYear() {$/;"	f	class:Car
+getConstant1	car.cpp	/^float Car::getConstant1() {$/;"	f	class:Car
+getConstant1	race.cpp	/^float Race::getConstant1() {$/;"	f	class:Race
+getConstant2	car.cpp	/^float Car::getConstant2() {$/;"	f	class:Car
+getConstant2	race.cpp	/^float Race::getConstant2() {$/;"	f	class:Race
+getDistance	race.cpp	/^double Race::getDistance() {$/;"	f	class:Race
+getFilter	car.cpp	/^bool Car::getFilter() {$/;"	f	class:Car
+getHeightFromGround	car.cpp	/^float RaceCar::getHeightFromGround() {$/;"	f	class:RaceCar
+getHeightFromGround	car.cpp	/^float SUVCar::getHeightFromGround() {$/;"	f	class:SUVCar
+getID	car.cpp	/^int Car::getID() {$/;"	f	class:Car
+getID	input.cpp	/^int Input::getID() {$/;"	f	class:Input
+getManeuverability	car.cpp	/^float Car::getManeuverability() {$/;"	f	class:Car
+getMaxSpeed	car.cpp	/^int Car::getMaxSpeed() {$/;"	f	class:Car
+getMaxSpeed	race.cpp	/^int Race::getMaxSpeed() {$/;"	f	class:Race
+getMaxSpeedForRace	car.cpp	/^int RaceCar::getMaxSpeedForRace(const string& raceType) {$/;"	f	class:RaceCar
+getMaxSpeedForRace	car.cpp	/^int SUVCar::getMaxSpeedForRace(const string& raceType) {$/;"	f	class:SUVCar
+getMaxSpeedForRace	car.cpp	/^int StockCar::getMaxSpeedForRace(const string& raceType) {$/;"	f	class:StockCar
+getNotToSixty	car.cpp	/^float Car::getNotToSixty() {$/;"	f	class:Car
+getNotToSixty	race.cpp	/^float Race::getNotToSixty() {$/;"	f	class:Race
+getNotToSixtyForRace	car.cpp	/^float RaceCar::getNotToSixtyForRace(const string& raceType) {$/;"	f	class:RaceCar
+getNotToSixtyForRace	car.cpp	/^float SUVCar::getNotToSixtyForRace(const string& raceType) {$/;"	f	class:SUVCar
+getNotToSixtyForRace	car.cpp	/^float StockCar::getNotToSixtyForRace(const string& raceType) {$/;"	f	class:StockCar
+getOffroadHindrance	car.cpp	/^float Car::getOffroadHindrance() {$/;"	f	class:Car
+getProtectorDepth	car.cpp	/^float Wheels::getProtectorDepth() {$/;"	f	class:Wheels
+getProtectorDepth	wheels.cpp	/^float Wheels::getProtectorDepth() {$/;"	f	class:Wheels
+getRaceDistance	race.cpp	/^double Race::getRaceDistance() {$/;"	f	class:Race
+getRaceTime	car.cpp	/^float Car::getRaceTime() {$/;"	f	class:Car
+getSixtyToMaxSpeed	car.cpp	/^float Car::getSixtyToMaxSpeed() {$/;"	f	class:Car
+getSixtyToMaxSpeed	race.cpp	/^float Race::getSixtyToMaxSpeed() {$/;"	f	class:Race
+getSixtyToMaxSpeedForRace	car.cpp	/^float RaceCar::getSixtyToMaxSpeedForRace(const string& raceType) {$/;"	f	class:RaceCar
+getSixtyToMaxSpeedForRace	car.cpp	/^float SUVCar::getSixtyToMaxSpeedForRace(const string& raceType) {$/;"	f	class:SUVCar
+getSixtyToMaxSpeedForRace	car.cpp	/^float StockCar::getSixtyToMaxSpeedForRace(const string& raceType) {$/;"	f	class:StockCar
+getTireSize	car.cpp	/^int Wheels::getTireSize() {$/;"	f	class:Wheels
+getTireSize	wheels.cpp	/^int Wheels::getTireSize() {$/;"	f	class:Wheels
+getTireType	car.cpp	/^const string& Wheels::getTireType() {$/;"	f	class:Wheels
+getTireType	wheels.cpp	/^const string& Wheels::getTireType() {$/;"	f	class:Wheels
+get_input	input.cpp	/^void Input::get_input() {$/;"	f	class:Input
+heightFromGround	car.h	/^    float heightFromGround;$/;"	m	class:RaceCar
+heightFromGround	car.h	/^    float heightFromGround;$/;"	m	class:SUVCar
+id	car.h	/^    int id;$/;"	m	class:Car
+input	connection.h	/^    std::ifstream input;$/;"	m	class:Connection
+integral	race.cpp	/^void Race::integral(double(*f)(double x), double a, double b, int n) {$/;"	f	class:Race
+isCMD	input.cpp	/^bool Input::isCMD() {$/;"	f	class:Input
+isValid	input.cpp	/^bool Input::isValid() {$/;"	f	class:Input
+itf	load_from_binary_file.h	/^    std::ifstream itf;$/;"	m	class:LoadFromBinaryFile
+last	sorting.h	/^    int last;$/;"	m	class:Sorting
+list_data	program.cpp	/^void list_data(Table &table, vector<Car*> &cars, bool sortedByID \/*=true*\/, bool filtered \/*= false*\/) {$/;"	f
+load_from_file_race_cars	connection.cpp	/^void Connection::load_from_file_race_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+load_from_file_stock_cars	connection.cpp	/^void Connection::load_from_file_stock_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+load_from_file_suv_cars	connection.cpp	/^void Connection::load_from_file_suv_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+logfile	program.cpp	/^static ofstream logfile;$/;"	v	file:
+main	program.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+maneuverability	car.h	/^    float maneuverability;$/;"	m	class:Car
+maxSpeed	race.cpp	/^int Race::maxSpeed = 0;$/;"	m	class:Race	file:
+maxSpeed	race.h	/^    static int maxSpeed;$/;"	m	class:Race
+max_speed	car.h	/^    int max_speed;$/;"	m	class:Car
+notToSixty	race.cpp	/^float Race::notToSixty = 0;$/;"	m	class:Race	file:
+notToSixty	race.h	/^    static float notToSixty;$/;"	m	class:Race
+not_to_sixty	car.h	/^    float not_to_sixty;$/;"	m	class:Car
+offroad_hindrance	car.h	/^    float offroad_hindrance;$/;"	m	class:Car
+otf	write_to_binary_file.h	/^    std::ofstream otf;$/;"	m	class:WriteToBinaryFile
+output	connection.h	/^    std::ofstream output;$/;"	m	class:Connection
+override	car.h	/^        float getNotToSixtyForRace(const std::string&) override;$/;"	m	class:RaceCar
+override	car.h	/^        float getNotToSixtyForRace(const std::string&) override;$/;"	m	class:SUVCar
+override	car.h	/^        float getNotToSixtyForRace(const std::string&) override;$/;"	m	class:StockCar
+override	car.h	/^        float getSixtyToMaxSpeedForRace(const std::string&) override;$/;"	m	class:RaceCar
+override	car.h	/^        float getSixtyToMaxSpeedForRace(const std::string&) override;$/;"	m	class:SUVCar
+override	car.h	/^        float getSixtyToMaxSpeedForRace(const std::string&) override;$/;"	m	class:StockCar
+override	car.h	/^        int getMaxSpeedForRace(const std::string&) override; $/;"	m	class:RaceCar
+override	car.h	/^        int getMaxSpeedForRace(const std::string&) override; $/;"	m	class:SUVCar
+override	car.h	/^        int getMaxSpeedForRace(const std::string&) override; $/;"	m	class:StockCar
+override	car.h	/^        void getCar(int) override;$/;"	m	class:RaceCar
+override	car.h	/^        void getCar(int) override;$/;"	m	class:SUVCar
+override	car.h	/^        void getCar(int) override;$/;"	m	class:StockCar
+override	car.h	/^        ~RaceCar() override;$/;"	m	class:RaceCar
+override	car.h	/^        ~StockCar() override;$/;"	m	class:StockCar
+params	input.h	/^    std::string params[MAX_PARAMS];$/;"	m	class:Input
+params	table.h	/^    std::vector<std::string> params;$/;"	m	class:Table
+perform_action	program.cpp	/^void perform_action(Table &table, vector<Car*> &cars) {$/;"	f
+printEntry	table.cpp	/^void Table::printEntry(vector<string> args) {$/;"	f	class:Table
+print_heading	table.cpp	/^void Table::print_heading() {$/;"	f	class:Table
+protectorDepth	car.h	/^    float protectorDepth;$/;"	m	class:Wheels
+race	program.cpp	/^void race(Table &table, vector<Car*> &cars) {$/;"	f
+race	race.cpp	/^float Race::race(int notToSixtySteps, int sixtyToMaxSpeedSteps, int maxSpeedSteps) {$/;"	f	class:Race
+raceDistance	race.cpp	/^double Race::raceDistance = 0;$/;"	m	class:Race	file:
+raceDistance	race.h	/^    static double raceDistance;$/;"	m	class:Race
+race_time	car.h	/^    float race_time;$/;"	m	class:Car
+readFloat	load_from_binary_file.cpp	/^float LoadFromBinaryFile::readFloat() {$/;"	f	class:LoadFromBinaryFile
+readInt	load_from_binary_file.cpp	/^int LoadFromBinaryFile::readInt() {$/;"	f	class:LoadFromBinaryFile
+readString	load_from_binary_file.cpp	/^string LoadFromBinaryFile::readString(int len) {$/;"	f	class:LoadFromBinaryFile
+reset_filter	filter.cpp	/^void Filter::reset_filter(vector<Car*> &cars) {$/;"	f	class:Filter
+setAerodynamicsCoefficient	car.cpp	/^void RaceCar::setAerodynamicsCoefficient(float aerodynamicsCoefficient) {$/;"	f	class:RaceCar
+setCMD	input.cpp	/^void Input::setCMD() {$/;"	f	class:Input
+setCarMake	car.cpp	/^void Car::setCarMake(const string& car_make) {$/;"	f	class:Car
+setCarModel	car.cpp	/^void Car::setCarModel(const string& car_model) {$/;"	f	class:Car
+setCarPrice	car.cpp	/^void Car::setCarPrice(int car_price) {$/;"	f	class:Car
+setCarYear	car.cpp	/^void Car::setCarYear(int car_year) {$/;"	f	class:Car
+setColumnWidths	table.cpp	/^void Table::setColumnWidths(vector<size_t> column_widths) {$/;"	f	class:Table
+setConstant1	car.cpp	/^void Car::setConstant1(float not_to_sixty) {$/;"	f	class:Car
+setConstant1	race.cpp	/^void Race::setConstant1(float c1) {$/;"	f	class:Race
+setConstant2	car.cpp	/^void Car::setConstant2(float sixty_to_max_speed, int max_speed) {$/;"	f	class:Car
+setConstant2	race.cpp	/^void Race::setConstant2(float c2) {$/;"	f	class:Race
+setDistance	race.cpp	/^void Race::setDistance(double d) {$/;"	f	class:Race
+setField	filter.cpp	/^void Filter::setField(int field) {$/;"	f	class:Filter
+setField	sorting.cpp	/^void Sorting::setField(int field) {$/;"	f	class:Sorting
+setFilter	car.cpp	/^void Car::setFilter(bool filter) {$/;"	f	class:Car
+setHeightFromGround	car.cpp	/^void RaceCar::setHeightFromGround(float heightFromGround) {$/;"	f	class:RaceCar
+setHeightFromGround	car.cpp	/^void SUVCar::setHeightFromGround(float heightFromGround) {$/;"	f	class:SUVCar
+setID	car.cpp	/^void Car::setID(int id) {$/;"	f	class:Car
+setManeuverability	car.cpp	/^void Car::setManeuverability(float maneuverability) {$/;"	f	class:Car
+setMaxSpeed	car.cpp	/^void Car::setMaxSpeed(int max_speed) {$/;"	f	class:Car
+setMaxSpeed	race.cpp	/^void Race::setMaxSpeed(int maxsp) {$/;"	f	class:Race
+setNotToSixty	car.cpp	/^void Car::setNotToSixty(float not_to_sixty) {$/;"	f	class:Car
+setNotToSixty	race.cpp	/^void Race::setNotToSixty(float nts) {$/;"	f	class:Race
+setOffroadHindrance	car.cpp	/^void Car::setOffroadHindrance(float offroad_hindrance) {$/;"	f	class:Car
+setParams	table.cpp	/^void Table::setParams(vector<string> params) {$/;"	f	class:Table
+setProtectorDepth	car.cpp	/^void Wheels::setProtectorDepth(float protectorDepth) {$/;"	f	class:Wheels
+setProtectorDepth	wheels.cpp	/^void Wheels::setProtectorDepth(float protectorDepth) {$/;"	f	class:Wheels
+setRaceDistance	race.cpp	/^void Race::setRaceDistance(double rd) {$/;"	f	class:Race
+setRaceTime	car.cpp	/^void Car::setRaceTime(float race_time) {$/;"	f	class:Car
+setSixtyToMaxSpeed	car.cpp	/^void Car::setSixtyToMaxSpeed(float sixty_to_max_speed) {$/;"	f	class:Car
+setSixtyToMaxSpeed	race.cpp	/^void Race::setSixtyToMaxSpeed(float stms) {$/;"	f	class:Race
+setTireSize	car.cpp	/^void Wheels::setTireSize(int tireSize) {$/;"	f	class:Wheels
+setTireSize	wheels.cpp	/^void Wheels::setTireSize(int tireSize) {$/;"	f	class:Wheels
+setTireType	car.cpp	/^void Wheels::setTireType(const string& tireType) {$/;"	f	class:Wheels
+setTireType	wheels.cpp	/^void Wheels::setTireType(const string& tireType) {$/;"	f	class:Wheels
+setType	filter.cpp	/^void Filter::setType(int type) {$/;"	f	class:Filter
+setType	sorting.cpp	/^void Sorting::setType(int type) {$/;"	f	class:Sorting
+setValue	filter.cpp	/^void Filter::setValue(const string& value) {$/;"	f	class:Filter
+sixtyToMaxSpeed	race.cpp	/^float Race::sixtyToMaxSpeed = 0;$/;"	m	class:Race	file:
+sixtyToMaxSpeed	race.h	/^    static float sixtyToMaxSpeed;$/;"	m	class:Race
+sixty_to_max_speed	car.h	/^    float sixty_to_max_speed;$/;"	m	class:Car
+sort	sorting.cpp	/^void Sorting::sort(vector<Car*> &cars) {$/;"	f	class:Sorting
+sort_by_id	sorting.cpp	/^void Sorting::sort_by_id(vector<Car*> &cars, int first, int last)$/;"	f	class:Sorting
+sort_by_max_speed	sorting.cpp	/^void Sorting::sort_by_max_speed(vector<Car*> &cars, int first, int last)$/;"	f	class:Sorting
+sort_by_price	sorting.cpp	/^void Sorting::sort_by_price(vector<Car*> &cars, int first, int last) {$/;"	f	class:Sorting
+sort_by_race_time	sorting.cpp	/^void Sorting::sort_by_race_time(vector<Car*> &cars, int first, int last)$/;"	f	class:Sorting
+sort_by_year	sorting.cpp	/^void Sorting::sort_by_year(vector<Car*> &cars, int first, int last) {$/;"	f	class:Sorting
+sort_lex_by_make	sorting.cpp	/^void Sorting::sort_lex_by_make(vector<Car*> &cars) {$/;"	f	class:Sorting
+sort_lex_by_model	sorting.cpp	/^void Sorting::sort_lex_by_model(vector<Car*> &cars) {$/;"	f	class:Sorting
+start	program.cpp	/^clock_t start;$/;"	v
+time_spent	program.cpp	/^double time_spent;$/;"	v
+tireSize	car.h	/^    int tireSize;$/;"	m	class:Wheels
+tireType	car.h	/^    std::string tireType;$/;"	m	class:Wheels
+type	filter.h	/^    FilterConstants::Types type;$/;"	m	class:Filter
+type	sorting.h	/^    SortingConstants::Types type;$/;"	m	class:Sorting
+unsetCMD	input.cpp	/^void Input::unsetCMD() {$/;"	f	class:Input
+value	filter.h	/^    std::string value;$/;"	m	class:Filter
+wheels	car.h	/^        Wheels wheels;$/;"	m	class:Car
+write	write_to_binary_file.cpp	/^void WriteToBinaryFile::write(const string& line, int size) {$/;"	f	class:WriteToBinaryFile
+write	write_to_binary_file.cpp	/^void WriteToBinaryFile::write(float number) {$/;"	f	class:WriteToBinaryFile
+write	write_to_binary_file.cpp	/^void WriteToBinaryFile::write(int number) {$/;"	f	class:WriteToBinaryFile
+write_to_file_race_cars	connection.cpp	/^void Connection::write_to_file_race_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+write_to_file_stock_cars	connection.cpp	/^void Connection::write_to_file_stock_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+write_to_file_suv_cars	connection.cpp	/^void Connection::write_to_file_suv_cars(vector<Car*> &cars) {$/;"	f	class:Connection
+~Car	car.cpp	/^Car::~Car() {$/;"	f	class:Car
+~Connection	connection.cpp	/^Connection::~Connection() {$/;"	f	class:Connection
+~Filter	filter.cpp	/^Filter::~Filter() {$/;"	f	class:Filter
+~Input	input.cpp	/^Input::~Input() { }$/;"	f	class:Input
+~LoadFromBinaryFile	load_from_binary_file.cpp	/^LoadFromBinaryFile::~LoadFromBinaryFile() {$/;"	f	class:LoadFromBinaryFile
+~Race	race.cpp	/^Race::~Race() {$/;"	f	class:Race
+~RaceCar	car.cpp	/^RaceCar::~RaceCar() {$/;"	f	class:RaceCar
+~SUVCar	car.cpp	/^SUVCar::~SUVCar() { $/;"	f	class:SUVCar
+~Sorting	sorting.cpp	/^Sorting::~Sorting() {$/;"	f	class:Sorting
+~StockCar	car.cpp	/^StockCar::~StockCar() {$/;"	f	class:StockCar
+~Wheels	car.cpp	/^Wheels::~Wheels() {$/;"	f	class:Wheels
+~Wheels	wheels.cpp	/^Wheels::~Wheels() {$/;"	f	class:Wheels
+~WriteToBinaryFile	write_to_binary_file.cpp	/^WriteToBinaryFile::~WriteToBinaryFile() {$/;"	f	class:WriteToBinaryFile

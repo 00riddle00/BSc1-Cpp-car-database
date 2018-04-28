@@ -1,0 +1,111 @@
+Starting program @Sun Mar  4 20:15:12 2018
+Time spent: 0.000244 seconds
+--------------------
+Starting program @Sun Mar  4 20:54:01 2018
+Time spent: 0.001501 seconds
+--------------------
+Starting program @Sun Mar  4 20:54:10 2018
+Time spent: 0.000515 seconds
+--------------------
+Starting program @Mon Mar  5 15:54:46 2018
+Time spent: 0.001659 seconds
+--------------------
+Starting program @Mon Mar  5 16:09:40 2018
+Time spent: 0.001565 seconds
+--------------------
+Starting program @Mon Mar  5 16:21:05 2018
+Time spent: 0.001507 seconds
+--------------------
+Starting program @Mon Mar  5 16:26:21 2018
+Time spent: 0.001242 seconds
+--------------------
+Starting program @Mon Mar  5 17:00:58 2018
+Time spent: 0.001371 seconds
+--------------------
+Starting program @Mon Mar  5 17:13:08 2018
+Time spent: 0.001434 seconds
+--------------------
+Starting program @Mon Mar  5 18:27:04 2018
+Time spent: 0.001796 seconds
+--------------------
+Starting program @Mon Mar  5 18:27:12 2018
+Time spent: 0.001094 seconds
+--------------------
+Starting program @Wed Mar  7 14:54:06 2018
+Time spent: 0.154218 seconds
+--------------------
+Starting program @Wed Mar  7 14:56:12 2018
+Time spent: 0.154986 seconds
+--------------------
+Starting program @Wed Mar  7 14:58:33 2018
+Time spent: 0.142923 seconds
+--------------------
+Starting program @Thu Mar  8 12:48:06 2018
+Time spent: 0.001483 seconds
+--------------------
+Starting program @Thu Mar  8 13:50:38 2018
+Time spent: 0.001708 seconds
+--------------------
+Starting program @Thu Mar  8 18:46:04 2018
+Time spent: 0.003271 seconds
+--------------------
+Starting program @Thu Mar  8 21:33:30 2018
+Time spent: 0.001735 seconds
+--------------------
+Starting program @Thu Mar  8 21:33:57 2018
+Time spent: 0.000788 seconds
+--------------------
+Starting program @Thu Mar  8 21:34:43 2018
+Time spent: 0.00114 seconds
+--------------------
+Starting program @Thu Mar  8 21:38:38 2018
+Time spent: 0.001143 seconds
+--------------------
+Starting program @Thu Mar  8 21:39:56 2018
+Time spent: 0.000949 seconds
+--------------------
+Starting program @Fri Mar  9 12:24:07 2018
+Time spent: 0.010038 seconds
+--------------------
+Starting program @Fri Mar  9 12:42:04 2018
+Time spent: 0.003662 seconds
+--------------------
+Starting program @Fri Mar  9 12:42:29 2018
+Time spent: 0.000446 seconds
+--------------------
+Starting program @Fri Mar  9 12:46:52 2018
+Time spent: 0.000915 seconds
+--------------------
+Starting program @Sat Mar 10 12:37:25 2018
+Time spent: 0.230156 seconds
+--------------------
+Starting program @Sat Mar 10 13:56:43 2018
+Time spent: 0.001493 seconds
+--------------------
+Starting program @Sat Mar 10 13:56:50 2018
+Time spent: 0.000727 seconds
+--------------------
+Starting program @Sat Mar 10 14:19:44 2018
+Time spent: 0.001475 seconds
+--------------------
+Starting program @Sat Mar 10 14:19:50 2018
+Time spent: 0.000559 seconds
+--------------------
+Starting program @Wed Apr 18 16:58:26 2018
+Time spent: 0.001488 seconds
+--------------------
+Starting program @Thu Apr 19 18:51:02 2018
+Time spent: 0.001941 seconds
+--------------------
+Starting program @Sat Apr 21 10:31:31 2018
+Time spent: 0.002162 seconds
+--------------------
+Starting program @Sat Apr 21 10:33:37 2018
+Time spent: 0.002681 seconds
+--------------------
+Starting program @Sat Apr 21 10:51:36 2018
+Time spent: 0.002359 seconds
+--------------------
+Starting program @Sat Apr 21 10:58:48 2018
+Time spent: 0.008747 seconds
+--------------------
