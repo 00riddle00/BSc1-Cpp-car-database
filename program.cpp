@@ -299,6 +299,82 @@ int main(int argc, char *argv[]) {
                }
                 break;
             }
+            case 'u': {
+                cout << "Select the ID of the entry you would like to duplicate:" << endl;
+
+                const int size = cars.size();
+
+                // FIXME VLA
+                int ids[size];
+                //int ids[cars.size()];
+
+                for (size_t i = 0; i < cars.size(); i++) {
+                    cout << "(" << cars[i]->getID() << ") " << cars[i]->getCarMake() << endl;
+                    ids[i] = cars[i]->getID();
+                }
+
+                int id;
+                bool exists;
+
+                while(1) {
+                    cout << "(Enter a number) > ";
+                    cin >> id;
+
+                    for (size_t i = 0; i < size; i++) {
+                        if (ids[i] == id) {
+                            exists = true;
+                        }
+                    }
+
+                    if (!exists) {
+                        cout << "Such id does not exist" << endl;
+                        continue;
+                    }
+                    break;
+                }
+
+                int new_id;
+
+                cout << "Select the new ID of the duplicated entry:" << endl;
+
+                while(1) {
+                    cout << "(Enter a number) > ";
+                    cin >> new_id;
+
+                    exists = false;
+                    for (size_t i = 0; i < size; i++) {
+                        if (ids[i] == new_id) {
+                            exists = true;
+                        }
+                    }
+
+                    if (exists) {
+                        cout << "Such id already exists" << endl;
+                        continue;
+                    }
+                    break;
+                }
+
+                int index;
+
+                for (size_t i = 0; i < cars.size(); i++) {
+                    if (cars[i]->getID() == id) {
+                        index = i;
+                    }
+                }
+
+                StockCar *stockCar = dynamic_cast<StockCar*>(cars[index]);
+                if (stockCar != nullptr) {
+                    StockCar *newStockCar = new StockCar(*stockCar);
+                    //StockCar newStockCar = *stockCar;
+                    newStockCar->setID(new_id);
+                    cars.push_back(newStockCar);
+                    conn_stock_cars->write_to_file_stock_cars(cars);
+                    cout << "Successfully saved, ID = " << id << endl;
+                }
+                cin.get();
+                break;
+            }
             case 'd': {
                 bool id_set = false;
                 for (size_t i = 0; i < cars.size(); i++) {
@@ -426,8 +502,7 @@ void perform_action(Table &table, vector<Car*> &cars) {
 
     cout << "What action would you like to perform? (enter a number)" << endl 
          << "(1) Filter" << endl
-         << "(2) Sort" << endl
-         << "(3) Duplicate" << endl;
+         << "(2) Sort" << endl;
 
     int action;
 
@@ -435,7 +510,7 @@ void perform_action(Table &table, vector<Car*> &cars) {
         cout << "(Enter a number) > ";
         cin >> action;
 
-        if (action < 1 || action > 3) {
+        if (action < 1 || action > 2) {
             cout << "Such option does not exist" << endl;
             continue;
         }
@@ -555,70 +630,6 @@ void perform_action(Table &table, vector<Car*> &cars) {
             break;
         }
 
-        case 3: {
-            cout << "Select the ID of the entry you would like to duplicate:" << endl;
-
-            const int size = cars.size();
-
-            // FIXME VLA
-            int ids[size];
-            //int ids[cars.size()];
-
-            for (size_t i = 0; i < cars.size(); i++) {
-                cout << "(" << cars[i]->getID() << ")" << endl;
-                ids[i] = cars[i]->getID();
-            }
-
-            int id;
-            bool exists;
-
-            while(1) {
-                cout << "(Enter a number) > ";
-                cin >> id;
-
-                for (size_t i = 0; i < size; i++) {
-                    if (ids[i] == id) {
-                        exists = true;
-                    }
-                }
-
-                if (!exists) {
-                    cout << "Such id does not exist" << endl;
-                    continue;
-                }
-                break;
-            }
-
-            int new_id;
-
-            cout << "Select the new ID of the duplicated entry:" << endl;
-
-            while(1) {
-                cout << "(Enter a number) > ";
-                cin >> new_id;
-
-                exists = false;
-                for (size_t i = 0; i < size; i++) {
-                    if (ids[i] == new_id) {
-                        exists = true;
-                    }
-                }
-
-                if (exists) {
-                    cout << "Such id already exists" << endl;
-                    continue;
-                }
-                break;
-            }
-
-            StockCar *stockCar = dynamic_cast<StockCar*>(cars[id]);
-            if (stockCar != nullptr) {
-                StockCar *newStockCar = new StockCar(*stockCar);
-                //StockCar newStockCar = *stockCar;
-                newStockCar->setID(new_id);
-                cars.push_back(newStockCar);
-            }
-        }
     }
 }
 
