@@ -45,8 +45,6 @@ void Input::get_input() {
 
     string line;
 
-    cout << "[enter \"i\" for info] main shell > ";
-
     getline(cin, line);
 
     string buf; // Have a buffer string

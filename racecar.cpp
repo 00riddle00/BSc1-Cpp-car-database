@@ -64,6 +64,7 @@ RaceCar::RaceCar(
         {}
 
 RaceCar::~RaceCar() {
+    decrementNumberOfCars();
 #ifndef NDEBUG
     cout << "RaceCar is deleted" << endl;
 #endif

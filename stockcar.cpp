@@ -60,6 +60,7 @@ StockCar::StockCar(
         {}
 
 StockCar::~StockCar() {
+    decrementNumberOfCars();
 #ifndef NDEBUG
     cout << "StockCar is deleted" << endl;
 #endif

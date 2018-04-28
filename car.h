@@ -30,6 +30,7 @@ class Car {
     float constant1;
     float constant2;
     float race_time;
+    static size_t numberOfCars;
 
     public:
         Wheels wheels;
@@ -51,6 +52,8 @@ class Car {
             const std::string& tireType,
             float protectorDepth
         );
+
+        Car(const Car& orig);
 
         virtual ~Car() = 0;
 
@@ -89,6 +92,9 @@ class Car {
         virtual float getNotToSixtyForRace(const std::string&) const = 0;
         virtual float getSixtyToMaxSpeedForRace(const std::string&) const = 0;
         virtual int getMaxSpeedForRace(const std::string&) const = 0;
+
+        static size_t getNumberOfCars();
+        static void decrementNumberOfCars();
 };
 
 #endif

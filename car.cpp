@@ -52,7 +52,28 @@ Car::Car(
         offroad_hindrance(offroad_hindrance),
         maneuverability(maneuverability),
         wheels(tireSize, tireType, protectorDepth)
-    {}
+    { 
+        ++numberOfCars; 
+    }
+
+
+Car::Car(const Car& orig) 
+    : 
+        id(orig.id),
+        filter(orig.filter),
+        car_make(orig.car_make),
+        car_model(orig.car_model),
+        car_year(orig.car_year),
+        car_price(orig.car_price),
+        max_speed(orig.max_speed),
+        not_to_sixty(orig.not_to_sixty),
+        sixty_to_max_speed(orig.sixty_to_max_speed),
+        offroad_hindrance(orig.offroad_hindrance),
+        maneuverability(orig.maneuverability),
+        wheels(orig.wheels.getTireSize(), orig.wheels.getTireType(), orig.wheels.getProtectorDepth())
+    {
+        ++numberOfCars;
+    }
 
 
 Car::~Car() {
@@ -431,4 +452,15 @@ void Car::getCar(int id) {
 
      this->wheels = wheels;
 };
+
+
+size_t Car::getNumberOfCars() {
+    return numberOfCars;
+}
+
+void Car::decrementNumberOfCars() {
+    --numberOfCars;
+}
+
+size_t Car::numberOfCars = 0;
 

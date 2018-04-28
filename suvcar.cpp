@@ -62,6 +62,7 @@ SUVCar::SUVCar(
         {}
 
 SUVCar::~SUVCar() { 
+    decrementNumberOfCars();
 #ifndef NDEBUG
     cout << "SUVCar is deleted" << endl;
 #endif

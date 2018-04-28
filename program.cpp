@@ -176,6 +176,7 @@ int main(int argc, char *argv[]) {
         // else get input from user
         } else {
             input->clear_input();
+            cout << "[enter \"i\" for info][" << Car::getNumberOfCars() << " cars] main shell > ";
             input->get_input();
             if (!input->isValid()) {
                 input->clear_input();
@@ -382,16 +383,19 @@ int main(int argc, char *argv[]) {
                         if (Helpers::choice("Do you really want to delete this entry?")) {
                             StockCar *stockCar = dynamic_cast<StockCar*>(cars[i]);
                             if (stockCar != nullptr) {
+                                delete cars[i];
                                 cars.erase(cars.begin()+i);
                                 conn_stock_cars->write_to_file_stock_cars(cars);
                             } else {
                                 RaceCar *raceCar = dynamic_cast<RaceCar*>(cars[i]);
                                 if (raceCar != nullptr) {
+                                    delete cars[i];
                                     cars.erase(cars.begin()+i);
                                     conn_race_cars->write_to_file_race_cars(cars);
                                 } else {
                                     SUVCar *suvCar = dynamic_cast<SUVCar*>(cars[i]);
                                     if (suvCar != nullptr) {
+                                        delete cars[i];
                                         cars.erase(cars.begin()+i);
                                         conn_suv_cars->write_to_file_suv_cars(cars);
                                     } else {
