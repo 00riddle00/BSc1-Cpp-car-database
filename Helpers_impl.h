@@ -18,7 +18,7 @@ namespace Helpers {
 
             for (j = i + 1; j < last + 1; ++j) {
 
-                if (data[i] > data[j]) {
+                if (*data[i] > *data[j]) {
                     temp = data[i];
                     data[i] = data[j];
                     data[j] = temp;

@@ -82,6 +82,7 @@ Car::~Car() {
 #endif
 }
 
+
 void Car::setID(int id) {
     if (id <= 0) {
         throw std::invalid_argument("Please make sure that id is a positive integer");
@@ -462,5 +463,33 @@ void Car::decrementNumberOfCars() {
     --numberOfCars;
 }
 
+void Car::setCompField(size_t cf) {
+    compField = cf;
+}
+
+size_t Car::getCompField() {
+    return compField;
+}
+
+
 size_t Car::numberOfCars = 0;
+size_t Car::compField = 0;
+
+
+bool operator>(const Car &obj1, const Car &obj2) {
+    cout << "HERE I COME" << endl;
+    switch(Car::getCompField()) {
+        case 1: 
+            cout << "CAR MAKE" << endl;
+            return obj1.getCarMake() > obj2.getCarMake();
+        case 2: 
+            return obj1.getCarModel() > obj2.getCarModel();
+        default:
+            // TODO add throw exception
+            cout << "Car object Comparison field is not set or set to the invalid value" << endl;
+            return false;
+    }
+}
+
+
 

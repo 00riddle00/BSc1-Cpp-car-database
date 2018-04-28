@@ -31,6 +31,7 @@ class Car {
     float constant2;
     float race_time;
     static size_t numberOfCars;
+    static size_t compField;
 
     public:
         Wheels wheels;
@@ -53,9 +54,11 @@ class Car {
             float protectorDepth
         );
 
-        Car(const Car& orig);
+        Car(const Car&);
 
         virtual ~Car() = 0;
+
+        friend bool operator>(const Car& obj1, const Car& obj2);
 
         void setID(int);
         void setFilter(bool);
@@ -95,6 +98,10 @@ class Car {
 
         static size_t getNumberOfCars();
         static void decrementNumberOfCars();
+        static void setCompField(size_t);
+        static size_t getCompField();
 };
+
+bool operator>(const Car& obj1, const Car& obj2);
 
 #endif

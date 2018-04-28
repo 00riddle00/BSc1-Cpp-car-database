@@ -242,34 +242,53 @@ void Sorting::sort(vector<Car*> &cars) {
     vector<string> temp;
 
     switch(this->field) {
-        case SortingConstants::MAKE:
+        case SortingConstants::MAKE: {
 
-            for (size_t i = 0; i < cars.size(); i++) {
-                temp.push_back(cars[i]->getCarMake());
-            }
+            //for (size_t i = 0; i < cars.size(); i++) {
+                //temp.push_back(cars[i]->getCarMake());
+            //}
+            cout << "SORTING by make" << endl;
 
-            Helpers::sort_lexicographically(temp);
+            Car::setCompField(SortingConstants::MAKE);
+            Helpers::sort_lexicographically(cars);
 
-            cout << "Sorted by make:" << endl << endl;
+            //int fi = 0;
+            //int la = cars.size() - 1;
 
-            for (size_t i = 0; i < temp.size(); i++) {
-                cout << i << ". " << temp[i] << endl;
-            }
+            //int i, j;
+            //Car* tmp;
 
-            break;
+            //cout << "CMAKE" << cars[0]->getCarMake() << endl;
+
+            //for (i = fi; i < la; ++i) {
+
+                //for (j = i + 1; j < la + 1; ++j) {
+
+                    //if (*cars[i] > *cars[j]) {
+                        //cout << "INSIDE IF" << endl;
+                        //tmp = cars[i];
+                        //cars[i] = cars[j];
+                        //cars[j] = tmp;
+                    //}
+                //}
+            //}
+
+            //break;
+        }
+
         case SortingConstants::MODEL:
 
-            for (size_t i = 0; i < cars.size(); i++) {
-                temp.push_back(cars[i]->getCarModel());
-            }
+/*            for (size_t i = 0; i < cars.size(); i++) {*/
+                //temp.push_back(cars[i]->getCarModel());
+            //}
 
-            Helpers::sort_lexicographically(temp);
+            //Helpers::sort_lexicographically(temp);
 
-            cout << "Sorted by model:" << endl << endl;
+            //cout << "Sorted by model:" << endl << endl;
 
-            for (size_t i = 0; i < temp.size(); i++) {
-                cout << i << ". " << temp[i] << endl;
-            }
+            //for (size_t i = 0; i < temp.size(); i++) {
+                //cout << i << ". " << temp[i] << endl;
+            //}
 
             break;
         case SortingConstants::YEAR:
