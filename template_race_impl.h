@@ -1,97 +1,117 @@
-#include "race.h"
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-Race::Race() {
+template <class T>
+Race<T>::Race() {
 #ifndef NDEBUG
     cout << "Race object is created" << endl;
 #endif
 }
 
-Race::~Race() {
+template <class T>
+Race<T>::~Race() {
 #ifndef NDEBUG
     cout << "Race object is deleted" << endl;
 #endif
 }
 
-void Race::setConstant1(float c1) {
+template <class T>
+void Race<T>::setConstant1(T c1) {
     constant1 = c1;
 }
 
-void Race::setConstant2(float c2) {
+template <class T>
+void Race<T>::setConstant2(T c2) {
     constant2 = c2;
 }
 
-void Race::setNotToSixty(float nts) {
+template <class T>
+void Race<T>::setNotToSixty(T nts) {
     notToSixty = nts;
 }
 
-void Race::setSixtyToMaxSpeed(float stms) {
+template <class T>
+void Race<T>::setSixtyToMaxSpeed(T stms) {
     sixtyToMaxSpeed = stms;
 }
 
-void Race::setMaxSpeed(int maxsp) {
+template <class T>
+void Race<T>::setMaxSpeed(T maxsp) {
     maxSpeed = maxsp;
 }
 
-void Race::setDistance(double d) {
+template <class T>
+void Race<T>::setDistance(T d) {
     distance = d;
 }
 
-void Race::setRaceDistance(double rd) {
+template <class T>
+void Race<T>::setRaceDistance(T rd) {
     raceDistance = rd;
 }
 
-float Race::getConstant1() {
+template <class T>
+T Race<T>::getConstant1() {
     return constant1;
 }
 
-float Race::getConstant2() {
+template <class T>
+T Race<T>::getConstant2() {
     return constant2;
 }
 
-float Race::getNotToSixty() {
+template <class T>
+T Race<T>::getNotToSixty() {
     return notToSixty;
 }
 
-float Race::getSixtyToMaxSpeed() {
+template <class T>
+T Race<T>::getSixtyToMaxSpeed() {
     return sixtyToMaxSpeed;
 }
 
-int Race::getMaxSpeed() {
+template <class T>
+T Race<T>::getMaxSpeed() {
     return maxSpeed;
 }
 
-double Race::getDistance() {
+template <class T>
+T Race<T>::getDistance() {
     return distance;
 }
 
-double Race::getRaceDistance() {
+template <class T>
+T Race<T>::getRaceDistance() {
     return raceDistance;
 }
 
-double Race::f1(double x) {
+template <class T>
+T Race<T>::f1(T x) {
     return pow(2 + constant1, x) - 1;
 }
 
-double Race::f2(double x) {
+template <class T>
+T Race<T>::f2(T x) {
     return constant2 * log(x + 1) + 27.8;
 }
 
-double Race::f3(double x) {
+template <class T>
+T Race<T>::f3(T x) {
     return maxSpeed / 3.6;
 }
 
-void Race::integral(double(*f)(double x), double a, double b, int n) {
-    double step = (b - a) / n;  // width of each small rectangle
+template <class T>
+void Race<T>::integral(T(*f)(T x), T a, T b, int n) {
+    T step = (b - a) / n;  // width of each small rectangle
     for (int i = 0; i < n; i ++) {
         distance += f(a + (i + 0.5) * step) * step; // sum up each small rectangle
     }
 }
 
-float Race::race(int notToSixtySteps, int sixtyToMaxSpeedSteps, int maxSpeedSteps) {
+template <class T>
+T Race<T>::race(int notToSixtySteps, int sixtyToMaxSpeedSteps, int maxSpeedSteps) {
 
     for (size_t j = 0; j < 100; j++) {
         integral(&f1, j * notToSixty / notToSixtySteps, (j+1) * notToSixty / notToSixtySteps, 1);
@@ -118,12 +138,24 @@ float Race::race(int notToSixtySteps, int sixtyToMaxSpeedSteps, int maxSpeedStep
     }
 }
 
-float Race::constant1 = 0;
-float Race::constant2 = 0;
-float Race::notToSixty = 0;
-float Race::sixtyToMaxSpeed = 0;
-int Race::maxSpeed = 0;
-double Race::distance = 0;
-double Race::raceDistance = 0;
+template <class T>
+T Race<T>::constant1 = 0;
 
+template <class T>
+T Race<T>::constant2 = 0;
+
+template <class T>
+T Race<T>::notToSixty = 0;
+
+template <class T>
+T Race<T>::sixtyToMaxSpeed = 0;
+
+template <class T>
+T Race<T>::maxSpeed = 0;
+
+template <class T>
+T Race<T>::distance = 0;
+
+template <class T>
+T Race<T>::raceDistance = 0;
 

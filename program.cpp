@@ -61,7 +61,7 @@
 #include "connection.h"
 #include "filter.h"
 #include "sorting.h"
-#include "race.h"
+#include "template_race.h"
 
 #define LOGFILE "log.txt"
 
@@ -687,7 +687,9 @@ void race(Table &table, vector<Car*> &cars) {
 
     cout << endl << "The " << distance << "m race begins" << endl << endl;
 
-    static Race raceObject;
+    static Race <float> raceObject;
+
+    //static Race raceObject;
     raceObject.setRaceDistance(distance);
 
     cout << "The results of the race:" << endl;
